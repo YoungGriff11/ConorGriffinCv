@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Conor Griffin - Portfolio</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <!--Nav bar -->
+    <nav>
+    <!--maybe put pro photo here -->
+        <div class="logo">
+            <h2>Conor Griffin</h2>
+        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Hi, I'm Conor Griffin</h1>
+            <p>B.Sc in Computing Student Seeking Internship | Application Development Enthusiast</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a motivated and detail-oriented 3rd-year Computer Science student at the National College of Ireland (NCI) with strong skills in programming and software development. I’m looking for an internship opportunity to apply my technical skills, develop new competencies, and contribute to meaningful projects.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section education">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>B.Sc in Computing</strong><br>National College of Ireland, Dublin (Sept 2022 - Present, Expected graduation 2026)</p>
+            <ul>
+                <li>Computer Architecture</li>
+                <li>Databases and Data Modelling (SQL)</li>
+                <li>Digital Multimedia</li>
+                <li>Operating Systems</li>
+                <li>Object-oriented & Advanced Programming (Java)</li>
+                <li>Web Design & Application Development</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Software Engineering</li>
+                <li>Software Quality & Testing</li>
+                <li>Advanced Computer Networks</li>
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>Security Fundamentals & Development</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Programming Languages</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">Java</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;">JavaScript</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;">Python</div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3>Web Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;">HTML</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">CSS</div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3>Databases</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;">SQL</div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3>Tools & Platforms</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;">Git</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">Visual Studio Code</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project" onclick="openModal('vitality-vault')">
+                    <div class="project-front">
+                        <h3>Vitality Vault</h3>
+                        <!--<p>A mock fitness app designed for users to track their daily calorie and macronutrient intake.</p>-->
+                    </div>
+                </div>
+                <div class="project" onclick="openModal('munch-mob')">
+                    <div class="project-front">
+                        <h3>Munch Mob</h3>
+                        <!--<p>A mock food delivery service website incorporating a basket system.</p>-->
+                    </div>
+                </div>
+                <div class="project" onclick="openModal('wun-loy')">
+                    <div class="project-front">
+                        <h3>Wun Loy</h3>
+                        <!--<p>A website for my current employer, implementing order and payment systems.</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Lead Counter-Staff</h3>
+                    <p>Wun Loy Chinese Takeaway, Ballymun (March 2018 - Present)<br>
+                    Managed customer orders and collaborated with kitchen staff to improve customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:Conorgriffin222@gmail.com">Conorgriffin222@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/conorgriffin222/">linkedin.com/in/conorgriffin222</a></p>
+            <p>Phone Number: 0852112104</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <h4>Tech Stack:</h4>
+            <p id="modal-tech-stack"></p>
+        </div>
+    </div>
+
+    <script src="cv.js"></script>
+</body>
+</html>
