@@ -11,6 +11,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
     transition: background-color 0.3s ease;
+    overflow-x: hidden;
 }
 
 .dark-mode {
@@ -50,15 +51,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
-nav .logo h2 {
-    font-size: 1.8em;
-    margin-left: 10px;
-}
+
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
