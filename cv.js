@@ -31,9 +31,9 @@ function openModal(project) {
             description: 'A mock food delivery service website for multiple restaraunts incorporating a basket system.',
             techStack: 'HTML, CSS, JavaScript, VS Code'
         },
-        'wun-loy': {
-            title: 'Wun Loy',
-            description: 'A website in development for my current employer, implementing order and payment systems, will also store customer data.',
+        'Urban & Co Barbers': {
+            title: 'Urban & Co Barbers',
+            description: 'A website I was compensated for building and running, built to just display the services and items available in store.',
             techStack: 'HTML, CSS, JavaScript, VS Code'
         }
     };
